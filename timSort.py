@@ -11,6 +11,8 @@ def tim_arrays():
 
     tim_arrays_collect2 = []
 
+    tim_arrays_final_combined_sort = []
+
     tim_arrays_final_sort = []
 
     input_number = input("Enter Number Seperated with Comas: ")
@@ -45,6 +47,8 @@ def tim_arrays():
 
             tim_arrays_collect2.append(run)
 
+        
+
         # Fast Method of Sorting Mechanism
 
         tim_arrays_collect1.sort()
@@ -55,6 +59,12 @@ def tim_arrays():
 
         print("Sorting the Remains",tim_arrays_collect2)
 
+        tim_arrays_final_combined_sort.append(tim_arrays_collect1)
+
+        tim_arrays_final_combined_sort.append(tim_arrays_collect2)
+
+        print("Combined", tim_arrays_final_combined_sort)
+
         # Final Output
 
         for final in tim_arrays_collect1:
@@ -64,8 +74,6 @@ def tim_arrays():
         for final in tim_arrays_collect2:
             
             tim_arrays_final_sort.append(final)
-
-        print("Combined: ", tim_arrays_final_sort)
 
         tim_arrays_final_sort.sort()
 
